@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "git -C /home/wj/Documents/claudecode/CVE_project/daily-cves pull --ff-only 2>/dev/null || true",
+            "statusMessage": "Syncing with GitHub..."
+          }
+        ]
+      }
+    ]
+  }
+}
